@@ -12,12 +12,15 @@
 const runningSumOfArray = (arr) => {
   let runningSumArray;
   // write your code here
+
   runningSumArray = [];
   let sum = 0;
   for (let i = 0;i <arr.length;i++){
 sum = sum + arr[i];
 runningSumArray.push(sum);
   };
+
+
   return runningSumArray;
 };
 // -------------------------------------------------------------------------------------------------------
@@ -39,6 +42,7 @@ runningSumArray.push(sum);
 // Output: nums = [0,1,3,0,4,_,_,_]
 const removeElementFromArray = (arr, value) => {
   // write your code here
+
   for (let i = 0; i < arr.length;i++){
     if (arr[i] === value){
       arr.splice(i,value);
@@ -51,6 +55,10 @@ const removeElementFromArray = (arr, value) => {
 };
 removeElementFromArray([0,1,2,2,3,0,4,2],2) ;
 console.log(arr);
+
+  return arr;
+};
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -67,6 +75,7 @@ console.log(arr);
 
 const oddFiltration = (arr) => {
   // write your code here
+
   // let oddArr = [];
   // for (let i=0; i <arr.length;i++){
   //   if(arr[i]%2 === 1){
@@ -78,6 +87,8 @@ const oddFiltration = (arr) => {
     return number % 2 !== 0;
   });
   return oddNum 
+
+
 };
 // -------------------------------------------------------------------------------------------------------
 

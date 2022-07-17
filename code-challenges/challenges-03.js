@@ -60,7 +60,28 @@
 //  2- If one of the names is null don`t add it to the full name
 
 const cvFormatter = (arr) => {
+
   // write your code here
+
+
+  // write your code here
+  let newArr = [];
+  for (let i=0; i<arr.length;i++){
+    if (arr[i].lastName === null){
+      fullName === firstName
+    } else if (arr[i].firstName === null){
+     fullName === lastName
+    }
+    else {
+     fullName === firstName + lastName
+    };
+newArr[i].fullName.push(fullName)
+    if (arr.yearsOfExperience > 1){
+      newArr[i].tech.push(arr[i].tech) 
+    };
+  }
+  return newArr;
+
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -83,6 +104,7 @@ const cvFormatter = (arr) => {
 // Output: [1, 2, 3, 4, 1]
 
 const targetArrayInGivenOrder = (numsArr, indexArr) => {
+
   let targetArr;
   // write your code here
   targetArr =[];
@@ -90,6 +112,15 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
     // targetArr.splice(indexArr[i], 0, numsArr[i]);
     targetArr.push(numsArr[indexArr[i]])
 };
+
+  let targetArr ;
+  // write your code here
+  targetArr = [];
+  for (let i =0; i < numsArr.length; i++) {
+    targetArr.splice(indexArr[i], 0, numsArr[i]);
+  };
+
+
   return targetArr;
 };
 // -------------------------------------------------------------------------------------------------------
@@ -107,6 +138,7 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
 //
 
 const arrInc = (arr) => {
+
   // let result = [];
   // write your code here
   for (let i = 0;i< arr.length; i++){
@@ -118,6 +150,14 @@ const arrInc = (arr) => {
   // return result;
   arr[i] += 10;}
 return arr;
+
+  let result = [];
+  // write your code here
+  for (let i=0; i< arr.length;i++){
+     result.push(arr[i]+10)
+  }
+  return result;
+
 };
 // -------------------------------------------------------------------------------------------------------
 
