@@ -113,14 +113,6 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
     targetArr.push(numsArr[indexArr[i]])
 };
 
-  let targetArr ;
-  // write your code here
-  targetArr = [];
-  for (let i =0; i < numsArr.length; i++) {
-    targetArr.splice(indexArr[i], 0, numsArr[i]);
-  };
-
-
   return targetArr;
 };
 // -------------------------------------------------------------------------------------------------------
@@ -150,13 +142,6 @@ const arrInc = (arr) => {
   // return result;
   arr[i] += 10;}
 return arr;
-
-  let result = [];
-  // write your code here
-  for (let i=0; i< arr.length;i++){
-     result.push(arr[i]+10)
-  }
-  return result;
 
 };
 // -------------------------------------------------------------------------------------------------------
