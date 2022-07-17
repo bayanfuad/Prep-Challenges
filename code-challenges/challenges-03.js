@@ -62,6 +62,9 @@
 const cvFormatter = (arr) => {
 
   // write your code here
+
+
+  // write your code here
   let newArr = [];
   for (let i=0; i<arr.length;i++){
     if (arr[i].lastName === null){
@@ -78,6 +81,7 @@ newArr[i].fullName.push(fullName)
     };
   }
   return newArr;
+
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -100,12 +104,22 @@ newArr[i].fullName.push(fullName)
 // Output: [1, 2, 3, 4, 1]
 
 const targetArrayInGivenOrder = (numsArr, indexArr) => {
+
+  let targetArr;
+  // write your code here
+  targetArr =[];
+  for (let i = 0; i < numsArr.length; i++) {
+    // targetArr.splice(indexArr[i], 0, numsArr[i]);
+    targetArr.push(numsArr[indexArr[i]])
+};
+
   let targetArr ;
   // write your code here
   targetArr = [];
   for (let i =0; i < numsArr.length; i++) {
     targetArr.splice(indexArr[i], 0, numsArr[i]);
   };
+
 
   return targetArr;
 };
@@ -124,12 +138,26 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
 //
 
 const arrInc = (arr) => {
+
+  // let result = [];
+  // write your code here
+  for (let i = 0;i< arr.length; i++){
+  //  let x = arr[i] * 10
+  //  result.push(x)
+  // arr[i] = arr[i]*10
+  // result.push(arr[i]);
+  //   }
+  // return result;
+  arr[i] += 10;}
+return arr;
+
   let result = [];
   // write your code here
   for (let i=0; i< arr.length;i++){
      result.push(arr[i]+10)
   }
   return result;
+
 };
 // -------------------------------------------------------------------------------------------------------
 
